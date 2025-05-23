@@ -33,12 +33,16 @@
     soundHit:
       collection: Punch
     angle: 30
-    animation: WeaponArcPunch
+    animation: WeaponArcFist
+    attackRate: 1
     damage:
       types:
-        Blunt: 0
-  - type: StaminaDamageOnHit
-    damage: 10
+        Blunt: 5
+    heavyRateModifier: 1
+    heavyDamageBaseModifier: 1
+    heavyPartDamageMultiplier: 1
+    heavyStaminaCost: 0
+    maxTargets: 1
   - type: Butcherable
     butcheringType: Spike
     spawned:
